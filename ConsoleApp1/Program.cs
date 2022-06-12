@@ -1,17 +1,5 @@
-﻿//
-
-namespace helloWorld
+﻿namespace basicInfo.Person
 {
-
-   public class personalInfo
-    {
-        public string firstName = "";
-        public string lastName = "";
-        public int age ;
-
-    }
-
-
     class Program
     {
         static void Main(string[] args)
@@ -21,7 +9,9 @@ namespace helloWorld
             personalInfo.firstName = "Aliye";
             personalInfo.lastName = "Berento";
             personalInfo.age = 21;
-            Console.WriteLine("My name is " + personalInfo.firstName +" " + personalInfo.lastName + " and I'm " + personalInfo.age);
+            personalInfo.city = "Minneapolis";
+
+            personalInfo.Introduction();
         }
     }
 }  
